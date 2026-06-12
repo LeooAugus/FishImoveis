@@ -136,12 +136,14 @@
 
             <h2>Aquarios a venda</h2>
 
+            <!-- Por aqui fica os aquários, ou imóveis msm (Nn sei como foram feitos os inserts) -->
+
         </section>
 
     </main>
 
     <footer> <!-- Não precisa de section aqui -->
-        asasdasdasd
+        <!-- Não é importante ainda -->
     </footer>
 
     <script rel="stylesheet" src="js/bootstrap.bundle.min.js"></script>
