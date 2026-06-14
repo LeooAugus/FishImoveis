@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,7 @@
     <title>FishImóveis</title>
 </head>
 
-<body> <!-- Utilize Div apenas quando não existir uma tag para o que vc for fazer mn -->
-
+<body> <!-- Utilize Div apenas quando não existir uma tag para o que vc for fazer mn --> 
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -42,9 +41,9 @@
                         
                         <li class="nav-item">
 
-                            <a class="nav-link active" 
+                            <a class="nav-link" 
                             aria-current="page" 
-                            href="Home.html"
+                            href="Home.php"
                             >
                                 Início
                             </a>
@@ -64,8 +63,8 @@
                         
                         <li class="nav-item">
 
-                            <a class="nav-link" 
-                            href="Financie.html"
+                            <a class="nav-link active" 
+                            href="#"
                             >
                                 Financie
                             </a>
@@ -75,7 +74,7 @@
                         <li class="nav-item">
 
                             <a class="nav-link" 
-                            href="Negocie.html"
+                            href="Negocio.php"
                             >
                                 Negocie seu imóvel
                             </a>

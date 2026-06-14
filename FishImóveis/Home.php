@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -44,7 +44,7 @@
 
                             <a class="nav-link active" 
                             aria-current="page" 
-                            href="Home.html"
+                            href="#"
                             >
                                 Início
                             </a>
@@ -65,7 +65,7 @@
                         <li class="nav-item">
 
                             <a class="nav-link" 
-                            href="Financie.html"
+                            href="Financie.php"
                             >
                                 Financie
                             </a>
@@ -75,7 +75,7 @@
                         <li class="nav-item">
 
                             <a class="nav-link" 
-                            href="Negocie.html"
+                            href="Negocio.php"
                             >
                                 Negocie seu imóvel
                             </a>
