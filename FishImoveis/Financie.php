@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -42,9 +42,9 @@
                         
                         <li class="nav-item">
 
-                            <a class="nav-link" 
+                            <a class="nav-link active" 
                             aria-current="page" 
-                            href="Home.php"
+                            href="Home.html"
                             >
                                 Início
                             </a>
@@ -65,7 +65,7 @@
                         <li class="nav-item">
 
                             <a class="nav-link" 
-                            href="Financie.php"
+                            href="Financie.html"
                             >
                                 Financie
                             </a>
@@ -75,7 +75,7 @@
                         <li class="nav-item">
 
                             <a class="nav-link" 
-                            href="Negocio.php"
+                            href="Negocie.html"
                             >
                                 Negocie seu imóvel
                             </a>
@@ -84,8 +84,8 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link active" 
-                            href="#"
+                            <a class="nav-link" 
+                            href="Sobre.html"
                             >
                                 Sobre
                             </a>
@@ -122,11 +122,6 @@
 
     <main class="contPrin"> <!-- Conteúdo principal dessa secção do site -->
 
-        <section class="container-fluid mt-2 mb-2 d-flex justify-content-center"> <!-- Separar assuntos da tag Main com Section pfv -->
-
-            <!-- Por aqui fica os aquários, ou imóveis msm (Nn sei como foram feitos os inserts) -->
-
-        </section>
 
     </main>
 

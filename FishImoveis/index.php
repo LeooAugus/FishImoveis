@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>FishImóveis</title>
 </head>
-
+<?php
+include 'conexao.php';
+?>
 <body> <!-- Utilize Div apenas quando não existir uma tag para o que vc for fazer mn -->
-
+    
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -42,9 +44,9 @@
                         
                         <li class="nav-item">
 
-                            <a class="nav-link" 
+                            <a class="nav-link active" 
                             aria-current="page" 
-                            href="Home.php"
+                            href="Home.html"
                             >
                                 Início
                             </a>
@@ -65,7 +67,7 @@
                         <li class="nav-item">
 
                             <a class="nav-link" 
-                            href="Financie.php"
+                            href="Financie.html"
                             >
                                 Financie
                             </a>
@@ -74,8 +76,8 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link active" 
-                            href="#"
+                            <a class="nav-link" 
+                            href="Negocie.html"
                             >
                                 Negocie seu imóvel
                             </a>
@@ -118,10 +120,60 @@
 
         </nav>
 
+        <section class="banner">
+
+            <div class="container conteudo-banner">
+
+                <!-- Filtro -->
+
+            </div>
+
+        </section>
+
     </header>
 
     <main class="contPrin"> <!-- Conteúdo principal dessa secção do site -->
 
+        <section class="container-fluid mt-2 mb-2 w-100"> <!-- Separar assuntos da tag Main com Section pfv -->
+            <div class="row">
+                <h2>Aquarios a venda</h2>
+            </div>
+            <?php
+            try{
+
+                $resultado = $conexao->query('SELECT * FROM imovel');
+                while ($imovel = $resultado->fetch_assoc()): 
+                echo <<<html
+                    <div class="row mb-3">
+                        <div class="col">
+                        <p>$imovel[id]<p>
+                        </div>
+                        <div class="col-5">
+                        <img src="img/$imovel[foto]" class="img-fluid" style="width: 280px; object-fit: contain;">
+                        </div>
+                        <div class="col">
+                        <p>$imovel[endereco]<p>
+                        </div>
+                        <div class="col">
+                        <p>$imovel[descricao]<p>
+                        </div>
+                        <div class="col">
+                        <p>$imovel[proprietario]<p>
+                        </div>
+                        <div class="col">
+                        <p>$imovel[dataCad]<p>
+                        </div>
+                        <div class="col">
+                            <a href="vercasa.php?id={$imovel['id']}">ver casa</a>
+                        </div>
+                    </div>
+                html;
+                endwhile;
+            } catch(mysqli_sql_exception $e) {
+                echo "<p class='text-danger'>Erro ao carregar os imóveis.</p>";
+            }
+            ?>
+        </section>
 
     </main>
 
