@@ -28,12 +28,6 @@
                             <a class="nav-link" href="index.php">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Contato.html">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Financie.php">Financie</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Negocie seu imóvel</a>
                         </li>
                         <li class="nav-item">
@@ -56,7 +50,7 @@
 
     <main class="contNegoc">
 
-        <section class="formulCad mt-2 mb-2">
+        <section class="formulCad mt-4 mb-4">
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 try {
@@ -138,9 +132,9 @@
                         <b>Foto:</b>
                         <input type="file" name="foto" id="imagemnova" accept="image/*" class="form-control mb-3"><br>
 
-                        <input type="submit" class="btn btn-secondary" value="Cadastrar">&nbsp;&nbsp;
-                        <input type="reset" class="btn btn-dark" value="Limpar">&nbsp;&nbsp;
-                        <a href="index.php" class="btn btn-primary">Cancelar</a>
+                        <input type="submit" class="btn btn-primary" value="Cadastrar">&nbsp;&nbsp;
+                        <input type="reset" class="btn btn-danger" value="Limpar">&nbsp;&nbsp;
+                        <a href="index.php" class="btn btn-secondary">Cancelar</a>
 
                     </form>
 
@@ -152,7 +146,15 @@
 
     </main>
 
-    <footer></footer>
+    <footer class="bg-primary"> <!-- Não precisa de section aqui -->
+            <h6 class="ms-4 me-4">
+                FishMóveis  - 2026 -
+            </h6>
+            <h6 class="ms-4">
+                Todos os direitos reservados para Leonardo e Kotaka
+            </h6>
+        </div>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>

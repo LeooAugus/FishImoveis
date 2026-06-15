@@ -48,22 +48,6 @@ include 'conexao.php';
 
                         <li class="nav-item">
 
-                            <a class="nav-link" href="Contato.html">
-                                Contato
-                            </a>
-
-                        </li>
-
-                        <li class="nav-item">
-
-                            <a class="nav-link" href="Financie.php">
-                                Financie
-                            </a>
-
-                        </li>
-
-                        <li class="nav-item">
-
                             <a class="nav-link" href="Negocie.php">
                                 Negocie seu imóvel
                             </a>
@@ -108,9 +92,8 @@ include 'conexao.php';
     </header>
 
     <main class="contPrin"> <!-- Conteúdo principal dessa secção do site -->
-
         <section class="container-fluid w-100"> <!-- Separar assuntos da tag Main com Section pfv -->
-            <div class="d-flex justify-content-center align-items-center mt-2 mb-2">
+            <div class="d-flex justify-content-center align-items-center">
                 <h2>Aquarios a venda</h2>
             </div>
             <?php
@@ -124,6 +107,7 @@ include 'conexao.php';
                     $imagem = !empty($imovel['foto']) ? $imovel['foto'] : 'sem_usuário.png';
 
                     echo <<<HTML
+                    <hr class="w=90">
                     <div class="row mb-3 align-items-center">
                         <div class="col-1">
                             <p>{$imovel['id']}</p>
@@ -164,8 +148,14 @@ include 'conexao.php';
 
     </main>
 
-    <footer> <!-- Não precisa de section aqui -->
-        <!-- Não é importante ainda -->
+    <footer class="bg-primary"> <!-- Não precisa de section aqui -->
+            <h6 class="ms-4 me-4">
+                FishMóveis  - 2026 -
+            </h6>
+            <h6 class="ms-4">
+                Todos os direitos reservados para Leonardo e Kotaka
+            </h6>
+        </div>
     </footer>
 
     <div class="modal fade" id="excluirModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
